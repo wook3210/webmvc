@@ -27,7 +27,9 @@
       <scope>test</scope>
     </dependency>
     
-    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+    	provided는 war 패키징할때는 클래스 패스에서 빠진다. 서블릿 컨테이너에서 제공된다.  
+    -->
 	<dependency>
 	    <groupId>javax.servlet</groupId>
 	    <artifactId>javax.servlet-api</artifactId>
@@ -35,6 +37,13 @@
 	    <scope>provided</scope>
 	</dependency>
 	    
+	    
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>5.1.3.RELEASE</version>
+	</dependency>
+	
   </dependencies>
 
   <build>
